@@ -10,6 +10,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { registerLocaleData } from '@angular/common';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 registerLocaleData(ptBr);
 @NgModule({
   declarations: [AppComponent, HeroesComponent, HeroDetailComponent],
@@ -19,6 +20,7 @@ registerLocaleData(ptBr);
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
+    BrowserAnimationsModule,
   ],
   providers: [{ provide: LOCALE_ID, useValue: 'pt' }],
   bootstrap: [AppComponent],
