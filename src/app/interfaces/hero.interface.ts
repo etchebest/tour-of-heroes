@@ -1,4 +1,4 @@
-export interface IHeroes {
+export interface IHero {
   id: number;
   name: string;
 }
